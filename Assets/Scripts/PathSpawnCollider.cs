@@ -6,7 +6,7 @@ public class PathSpawnCollider : MonoBehaviour {
     public float positionY = 0.81f;
     public Transform[] PathSpawnPoints;
     public GameObject Path;
-    public GameObject SpawnBorder;
+    public GameObject DangerousBorder;
 
     void OnTriggerEnter(Collider hit)
     {
@@ -27,7 +27,7 @@ public class PathSpawnCollider : MonoBehaviour {
                     rotation.y += 90;
                     Vector3 position = PathSpawnPoints[i].position;
                     position.y += positionY;
-                    Instantiate(SpawnBorder, position, Quaternion.Euler(rotation));
+                    Instantiate(DangerousBorder, position, Quaternion.Euler(rotation));
                 }
             }
             

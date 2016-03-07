@@ -12,8 +12,6 @@ public class CharacterRotateMovement : MonoBehaviour
     private CharacterController controller;
     private Animator anim;
 
-    private new Rigidbody rigidbody;
-
     public float JumpSpeed = 8.0f;
     public float Speed = 6.0f;
     public Transform CharacterGO;

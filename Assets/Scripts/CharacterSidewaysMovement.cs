@@ -13,16 +13,17 @@ public class CharacterSidewaysMovement : MonoBehaviour
     private Animator anim;
 
     private bool isChangingLane = false;
-    private Vector3 locationBeforeChangingLane;
     private Vector3 locationAfterChangingLane;
+    //distance character will move sideways
     private Vector3 sidewaysMovementDistance = Vector3.right * 2f;
 
     public float SideWaysSpeed = 5.0f;
 
     public float JumpSpeed = 8.0f;
     public float Speed = 6.0f;
+    //Max gameobject
     public Transform CharacterGO;
-
+    
     IInputDetector inputDetector = null;
 
     // Use this for initialization
@@ -119,7 +120,6 @@ public class CharacterSidewaysMovement : MonoBehaviour
 
         if (controller.isGrounded && inputDirection.HasValue && !isChangingLane)
         {
-            locationBeforeChangingLane = transform.position;
             isChangingLane = true;
 
             if (inputDirection == InputDirection.Left)
