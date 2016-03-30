@@ -3,6 +3,7 @@
 Source code for a tutorial about creating an infinite 3D runner game in Unity (like Temple Run, Subway Surfers)
 
 - Part 1: http://dgkanatsios.com/2016/03/07/creating-an-infinite-3d-runner-game-in-unity-like-temple-run-subway-surfers-part-1/
+- Part 2: http://dgkanatsios.com/2016/03/09/creating-an-infinite-3d-runner-game-in-unity-like-temple-run-subway-surfers-part-2/
 
 Various assets used in the game
 
